@@ -1,5 +1,4 @@
 .header {
-    // height: 80vh;
     display: grid;
     grid-template-rows: 1fr 3fr 2fr;
     grid-template-areas:
@@ -46,10 +45,6 @@
         background-color: $main-color;
         color: #fff;
         text-transform: uppercase;
-
-        h1 {
-            margin-bottom: 5%;
-        }
 
         &__btn {
             background-color: $secondary-color;

@@ -1,21 +1,11 @@
 .services {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "column"
-        "column"
-        "column";
     text-align: center;
     padding: 5vh 5%;
     background-color: #eef0f1;
 
-    &__h1 {
-        padding: 5vh 0;
-    }
-
     &__service {
-
         padding: 0 0 5% 0;
         background-color: #fff;
 
