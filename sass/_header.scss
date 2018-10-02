@@ -50,5 +50,13 @@
         h1 {
             margin-bottom: 5%;
         }
+
+        &__btn {
+            background-color: $secondary-color;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
     }
 }

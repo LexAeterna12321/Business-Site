@@ -1,14 +1,23 @@
 .btn {
     padding: 10px 25px;
-    background-color: $secondary-color;
+    background-color: $main-color;
     color: #fff;
-    border: 2px solid #22aedc;
+    border: none;
     border-radius: 50px;
     text-transform: uppercase;
     font-size: 1.4rem;
+    cursor: pointer;
+    transition: .4s;
+
+    &:hover {
+        background-color: $secondary-color;
+    }
 }
 
 h1 {
+    position: relative;
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 3rem;
+    // &::after
 }

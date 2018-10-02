@@ -7,7 +7,22 @@
 
 @media (min-width:768px) {
     html {
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    .services {
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas:
+            "header header header"
+            "column column column";
+
+        &__h1 {
+            grid-area: header;
+        }
+
     }
 }
 
