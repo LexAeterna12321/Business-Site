@@ -16,20 +16,29 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 3fr;
         grid-template-areas:
-            "header header header"
-            "column column column";
+            "header header header";
 
         &__h1 {
             grid-area: header;
         }
+    }
 
-        // There is some problem with grid columns. Need to be fixed
+    .subscribe {
 
-        // &__service {
-        //     grid-area: column;
-        // }
+        &__input,
+        &__btn {
+            width: 50%;
+            display: inline-block;
+            margin: 3%;
+            font-size: 1.4rem;
+        }
+
+        &__btn {
+            width: 30%;
+        }
 
     }
+
 }
 
 @media (min-width:1024px) {

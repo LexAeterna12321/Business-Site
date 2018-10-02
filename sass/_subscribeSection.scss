@@ -1,0 +1,40 @@
+//   <section class="subscribe"><h1 class="subscribe__h1"></h1><h2 class="subscribe__h2"></h2><input type="email"class="subscribe__input"><button type="submit"class="btn">Subscribe</button>
+
+.subscribe {
+    padding: 5vh 5%;
+    background-color: $main-color;
+    color: #fff;
+    text-align: center;
+
+    &__h1::after {
+        background-color: #fff;
+    }
+
+    &__h2 {
+        margin: 5% 0;
+    }
+
+    &__input {
+        width: 90%;
+        padding: 10px 25px;
+        margin: 3% auto;
+        background-color: #787878;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        color: #fff;
+
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    &__btn {
+        @extend .subscribe__input;
+        background-color: $secondary-color;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+}
