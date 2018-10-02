@@ -1,0 +1,54 @@
+.header {
+    // height: 80vh;
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-areas:
+        "nav"
+        "banner"
+        "header-txt";
+    text-align: center;
+
+    &__nav {
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 10fr 3fr;
+
+        &__logo {
+            justify-self: start;
+            align-self: center;
+            margin-left: 5%;
+        }
+
+        &__menu {
+            align-self: center;
+            color: $secondary-color;
+            font-size: 1.6rem;
+            cursor: pointer;
+
+            i {
+                margin-left: 4px;
+
+            }
+        }
+    }
+
+    &__banner {
+        grid-area: banner;
+        background-color: yellow;
+        background: url("../images/slide1.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    &__txt {
+        grid-area: header-txt;
+        padding: 5%;
+        background-color: $main-color;
+        color: #fff;
+        text-transform: uppercase;
+
+        h1 {
+            margin-bottom: 5%;
+        }
+    }
+}

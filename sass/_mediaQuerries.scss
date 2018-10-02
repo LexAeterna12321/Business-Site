@@ -1,0 +1,6 @@
+@media(min-width:533px) and (orientation: landscape) {
+    .header {
+
+        grid-template-rows: 1fr 5fr 2fr;
+    }
+}
