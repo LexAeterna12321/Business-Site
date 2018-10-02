@@ -1,0 +1,27 @@
+.welcome {
+    display: grid;
+    grid-template-rows: 30vh 1fr;
+    text-align: center;
+    min-height: 80vh;
+    font-size: 1.6rem;
+    padding: 0 2%;
+
+    &__h1 {
+        font-size: 1.8em;
+        align-self: center;
+    }
+
+    &__p {
+        align-self: center;
+        line-height: 2;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        margin-bottom: 10px;
+        align-self: center;
+        justify-self: center;
+        background-color: $main-color;
+        border: none;
+    }
+}

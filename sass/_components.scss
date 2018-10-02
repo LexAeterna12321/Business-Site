@@ -1,8 +1,13 @@
 .btn {
-    padding: 10px 20px;
+    padding: 10px 25px;
     background-color: $secondary-color;
     color: #fff;
     border: 2px solid #22aedc;
     border-radius: 50px;
     text-transform: uppercase;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 700;
 }
