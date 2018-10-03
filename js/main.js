@@ -85,6 +85,7 @@ window.addEventListener("resize", () => {
     if (window.innerWidth > 1200) {
         fixedMenu.style.display = "none";
         topMenu.style.display = "block";
+        hiddenMenu.classList.remove("header__nav__menu--show");
     } else {
         topMenu.style.display = "none";
         fixedMenu.style.display = "block";
