@@ -10,7 +10,8 @@
     &__nav {
         grid-area: nav;
         display: grid;
-        grid-template-columns: 10fr 3fr;
+        grid-template-columns: 4fr 6fr;
+        text-align: right;
 
         &__logo {
             justify-self: start;
@@ -19,13 +20,89 @@
         }
 
         &__menu {
+            width: 100%;
+            top: 5%;
+            right: 5%;
+            position: relative;
             align-self: center;
             color: $secondary-color;
             font-size: 1.6rem;
             cursor: pointer;
+            overflow: hidden;
 
             i {
-                margin-left: 4px;
+                position: fixed;
+                top: 5%;
+                right: 5%;
+                display: none;
+                z-index: 2;
+            }
+
+            &--hidden {
+                display: none;
+            }
+
+            &--show {
+                display: block;
+                position: fixed;
+                top: 9%;
+                right: 0;
+                width: 90%;
+                margin: 0 5%;
+                z-index: 1;
+
+                & ul {
+                    display: flex;
+                    background-color: rgba(0, 0, 0, .7);
+                    border-radius: 15px;
+
+                    li {
+                        text-align: center;
+                        padding: 20px;
+                        flex-basis: 20%;
+
+                        a:hover {
+                            color: #33aefc;
+                        }
+                    }
+                }
+            }
+
+            &__topMenu {
+                &--hidden {
+                    position: absolute;
+                    top: 0;
+                    left: 200%;
+                    transition: 1s;
+                    z-index: 2;
+                    color: #33aefc;
+                    opacity: 0;
+
+                    & ul {
+                        display: flex;
+                        background-color: transparent;
+                        border-radius: 15px;
+                        color: $main-color;
+
+                        li {
+                            padding: 0 20px;
+                            flex-basis: 20%;
+
+                            a {
+                                color: $main-color;
+                            }
+
+                            a:hover {
+                                color: #33aefc;
+                            }
+                        }
+                    }
+                }
+
+                &--show {
+                    left: 0;
+                    opacity: 1;
+                }
 
             }
         }
